@@ -1,42 +1,192 @@
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+.head{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    place-items: center;
+    width: 100%;
+    height: 8vh;
+    background-color: blue;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+.navbar{
+    padding-left: 15px;
+    padding-right: 15px;
+    font-size: 2rem;
+    background-color: #93f6f6;
+    margin: 15px;
+    border: none;
+    border-radius: 10px;
+    text-decoration: none;
+    text-shadow: -2px 0 1px #000;
+  }
+  .navbar:hover{
+    color: blue;
+  }
+
+  h1{
+    font-size: 4rem;
+    text-align: center;
+    margin: 15%;
+    color: blue;
+    text-shadow: -5px -2px 3px #000;
+    cursor: pointer;
+  }
+
+  h1:hover{
+    font-size: 4.5rem;
+  }
+
+  h2:hover,
+  h3:hover,
+  p:hover{
+    color: blue;
+  }
+
+  .body{
+    width: 100%;
+    height: 97vh;
+    background-image: radial-gradient(cyan 15%, #5656fa);
+  }
+
+  .body1{
+    width: 100%;
+    height: 97vh;
+    background-image: radial-gradient(cyan 15%, #5656fa);
+  }
+
+  p{
+    margin-left: 14rem;
+    width: 75%;
+    font-size: 1.26rem;
+    font-weight: bolder;
+    cursor: pointer;
+  }
+
+  .para{
+    margin-left: 14rem;
+    width: 75%;
+    font-size: 1.2rem;
+    font-weight: bolder;
+    cursor: pointer;
+  }
+
+  
+
+  h2{
+    margin-left: 7%;
+    font-weight: bolder;
+    cursor: pointer;
+  }
+
+  h3{
+    margin-left: 13%;
+    font-weight: bolder;
+    cursor: pointer;
+  }
+
+.contact-content{
+  margin-top: 15%;
+  margin-left: 38%;
+}
+
+.icon{
+  width: 100px;
+  height: 100px;
+  list-style-type: none;
+  display: flex;
+  flex-direction: row;
+  gap: 60px;
+}
+
+@media (max-width: 767px) {
+  .head {
+    flex-direction: row;
+    height: 7vh;
+  }
+
+  .navbar {
+    padding-left: 5px;
+    padding-right: 5px;
+    font-size: 1.4rem;
+    margin: 4px;
+    text-shadow: -1px 0 1px #000;
+  }
+
+  .body1 h1 {
+    font-size: 2.2rem;
+    margin-top: 65%;
+    text-shadow: -3px -1px 2px #000;
+  }
+
+  h1:hover {
+    font-size: 2.2rem;
+  }
+
+  .body {
+    height: auto;
+    padding-bottom: 5vh;
+    background-image: radial-gradient(cyan 10%, #5656fa);
+  }
+
+  .body1{
+    height: 100vh;
+  }
+
+
+  p, .para {
+    margin-left: 5%;
+    width: 90%;
+    font-size: 1.1rem;
+  }
+
+  h2 {
+    margin-left: 5%;
+  }
+
+  h3 {
+    margin-left: 7%;
+  }
+
+  .body1 .contact-content {
+    margin-top: 65%;
+    margin-left: 11%;
+  }
+
+  .icon {
+    width: 50px;
+    height: 50px;
+    gap: 30px;
   }
 }
 
-html,
-body {
-  max-width: 100vw;
-  overflow-x: hidden;
-}
+@media (min-width: 768px) and (max-width: 1024px){
+  .navbar {
+    font-size: 2.5rem;
+    padding-left: 8px;
+    padding-right: 8px;
+    margin: 10px;
+    text-shadow: -2px 0 1px #000;
+  }
 
-body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
+  .body1 h1 {
+    font-size: 3.7rem;
+    margin-top: 50%;
+    text-shadow: -3px -1px 2px #000;
+  } 
+  h1:hover {
+    font-size: 3.7rem;
+  }
 
-* {
-  box-sizing: border-box;
-  padding: 0;
-  margin: 0;
-}
+  p, .para {
+    font-size: 1rem;
+  }
 
-a {
-  color: inherit;
-  text-decoration: none;
-}
+  .body1 .contact-content {
+    margin-top: 50%;
+    margin-left: 30%;
+  }
 
-@media (prefers-color-scheme: dark) {
-  html {
-    color-scheme: dark;
+  .icon {
+    gap: 30px;
   }
 }
