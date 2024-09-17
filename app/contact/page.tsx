@@ -2,13 +2,13 @@ import NavBar from "../navBar/page";
 import * as React from "react";
 
 const Contact = () => {
-  const SvgComponent1 = (props) => (
+  const SvgComponent1= () => (
     <a href="https://www.linkedin.com/in/rimsha-muhammad-arshad-85b5512b7/" target="_blank"><svg
       xmlns="http://www.w3.org/2000/svg"
       width={100}
       height={100}
       viewBox="0 0 256 256"
-      {...props}
+      // {...props}
     >
       <g fill="none">
         <rect width={256} height={256} fill="#fff" rx={60} />
@@ -21,13 +21,13 @@ const Contact = () => {
     </svg>
     </a>
   );
-  const SvgComponent2 = (props) => (
+  const SvgComponent2 = () => (
     <a href="https://wa.me/03131156294" target="_blank"><svg
     xmlns="http://www.w3.org/2000/svg"
     width={100}
     height={100}
     viewBox="0 0 256 258"
-    {...props}
+    // {...props}
   >
       <defs>
       <linearGradient id="a" x1="50%" x2="50%" y1="100%" y2="0%">
